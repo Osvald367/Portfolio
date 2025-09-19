@@ -1,1076 +1,1392 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Portfolio Osvald</title>
+    <meta
+      name="description"
+      content="Portfolio d'Osvald ADOKO, développeur web et mobile passionné"
+    />
+    <meta
+      name="keywords"
+      content="développeur web, portfolio, design, développement mobile"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio Osvald</title>
-  <meta name="description" content="Portfolio d'Osvald ADOKO, développeur web et mobile passionné">
-  <meta name="keywords" content="développeur web, portfolio, design, développement mobile">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <body class="index-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="container-fluid position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center"> </a>
 
-</head>
-
-<body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-
-        <div class="profile-img">
-          <img src="assets/img/profile/profile-square-1.webp" alt="Photo de profil" class="img-fluid rounded-circle">
-        </div>
-
-        <a href="index.html" class="logo d-flex align-items-center justify-content-center active">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="assets/img/logo.webp" alt=""> -->
-          <h1 class="sitename">Osvald ADOKO</h1>
-        </a>
-
-        <div class="social-links text-center">
-          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        </div>
-
-        <ul>
-          <li><a href="#hero">Accueil</a></li>
-          <li><a href="#about">À propos</a></li>
-          <li><a href="#resume">CV</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#services">Services</a></li>
-          <li class="dropdown"><a href="#"><span>Menu déroulant</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Option 1</a></li>
-              <li class="dropdown"><a href="#"><span>Sous-menu</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Sous-option 1</a></li>
-                  <li><a href="#">Sous-option 2</a></li>
-                  <li><a href="#">Sous-option 3</a></li>
-                  <li><a href="#">Sous-option 4</a></li>
-                  <li><a href="#">Sous-option 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Option 2</a></li>
-              <li><a href="#">Option 3</a></li>
-              <li><a href="#">Option 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-    </div>
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-
-      <div class="container">
-        <div class="row g-0 align-items-center">
-
-          <div class="col-lg-6 hero-content" data-aos="fade-right" data-aos-delay="100">
-            <div class="content-wrapper">
-              <h1 class="hero-title">Créatif <span class="typed" data-typed-items="Designer, Développeur, Freelance"></span></h1>
-              <p class="lead">Développeur passionné spécialisé dans le développement web et mobile, je combine des compétences techniques avancées avec une sensibilité aiguisée au design graphique.</p>
-
-              <div class="hero-stats" data-aos="fade-up" data-aos-delay="57">
-                <div class="stat-item">
-                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="57" data-purecounter-duration="2">0</span>
-                  <span class="stat-label">Projets terminés</span>
-                </div>
-                <div class="stat-item">
-                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="2">0</span>
-                  <span class="stat-label">Années d'expérience</span>
-                </div>
-                <div class="stat-item">
-                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="21" data-purecounter-duration="2">0</span>
-                  <span class="stat-label">Clients satisfaits</span>
-                </div>
-              </div>
-
-              <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
-                <a href="#portfolio" class="btn btn-primary">Voir mon travail</a>
-                <a href="#contact" class="btn btn-outline">Me contacter</a>
-              </div>
-
-              <div class="social-links" data-aos="fade-up" data-aos-delay="400">
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="https://github.com/osvald-adoko"><i class="bi bi-github"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-              </div>
-            </div>
+        <nav id="navmenu" class="navmenu">
+          <div class="profile-img">
+            <img
+              src="assets/img/profile/profile-square-1.webp"
+              alt="Photo de profil"
+              class="img-fluid rounded-circle"
+            />
           </div>
 
-          <div class="col-lg-6 hero-image" data-aos="fade-left" data-aos-delay="200">
-            <div class="image-container">
-              <div class="floating-elements">
-                <div class="floating-card card-1" data-aos="zoom-in" data-aos-delay="300">
-                  <i class="bi bi-palette"></i>
-                  <span>Design UI/UX</span>
-                </div>
-                <div class="floating-card card-2" data-aos="zoom-in" data-aos-delay="400">
-                  <i class="bi bi-code-slash"></i>
-                  <span>Développement</span>
-                </div>
-                <div class="floating-card card-3" data-aos="zoom-in" data-aos-delay="500">
-                  <i class="bi bi-lightning"></i>
-                  <span>Idées créatives</span>
-                </div>
-              </div>
-              <img src="assets/img/profile/profile-square-1.webp" alt="Portfolio Hero" class="img-fluid hero-main-image">
-              <div class="image-overlay"></div>
-            </div>
+          <a
+            href="index.html"
+            class="logo d-flex align-items-center justify-content-center active"
+          >
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="assets/img/logo.webp" alt=""> -->
+            <h1 class="sitename">Osvald ADOKO</h1>
+          </a>
+
+          <div class="social-links text-center">
+            <a href="https://www.facebook.com/algor.adoko.3" class="facebook"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="https://wa.me/22996955063" class="whatsapp"
+              ><i class="bi bi-whatsapp"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/osvald-adoko-7a3ab3235"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/Osvald367" target="_blank">
+              <i class="bi bi-github"></i>
+            </a>
           </div>
 
-        </div>
+          <ul>
+            <li><a href="#hero">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#resume">CV</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
       </div>
+    </header>
 
-    </section><!-- /Hero Section -->
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section">
+        <div class="container">
+          <div class="row g-0 align-items-center">
+            <div
+              class="col-lg-6 hero-content"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              <div class="content-wrapper">
+                <h1 class="hero-title">
+                  Créatif
+                  <span
+                    class="typed"
+                    data-typed-items="Designer, Développeur, Freelance"
+                  ></span>
+                </h1>
+                <p class="lead">
+                  Développeur passionné spécialisé dans le développement web et
+                  mobile, je combine des compétences techniques avancées avec
+                  une sensibilité aiguisée au design graphique.
+                </p>
 
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
-      <div class="container section-title">
-        <h2>À propos</h2>
-        <p>Découvrez mon parcours, mes compétences et ma passion pour le développement</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row align-items-center">
-
-          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
-            <div class="profile-image-wrapper">
-              <div class="profile-image">
-                <img src="assets/img/profile/profile-square-1.webp" alt="Profil" class="img-fluid">
-              </div>
-              <div class="signature-section">
-                <img src="assets/img/misc/signature-1.webp" alt="Signature" class="signature">
-                <p class="quote">Construire des expériences numériques significatives grâce à un code créatif.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
-            <div class="about-content">
-              <div class="intro">
-                <h2>Bonjour, je suis Osvald - un Développeur Créatif</h2>
-                <p>Je suis un développeur passionné par la création d'expériences numériques innovantes. Mon approche combine expertise technique et sensibilité design pour produire des solutions qui allient fonctionnalité et esthétique.</p>
-              </div>
-
-              <div class="skills-grid">
-                <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
-                  <div class="skill-icon">
-                    <i class="bi bi-palette"></i>
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="57">
+                  <div class="stat-item">
+                    <span
+                      class="purecounter"
+                      data-purecounter-start="0"
+                      data-purecounter-end="57"
+                      data-purecounter-duration="2"
+                      >0</span
+                    >
+                    <span class="stat-label">Projets terminés</span>
                   </div>
-                  <h4>Design graphique</h4>
-                  <p>Création d'interfaces utilisateur intuitives et attrayantes</p>
-                </div>
-                <div class="skill-item" data-aos="zoom-in" data-aos-delay="450">
-                  <div class="skill-icon">
-                    <i class="bi bi-code-slash"></i>
-                  </div>
-                  <h4>Développement Frontend</h4>
-                  <p>Développement d'applications web interactives et réactives</p>
-                </div>
-                <div class="skill-item" data-aos="zoom-in" data-aos-delay="500">
-                  <div class="skill-icon">
-                    <i class="bi bi-code-slash"></i>
-                  </div>
-                  <h4>Développement Backend</h4>
-                  <p>Développement de backends robustes et scalables</p>
-                </div>
-              </div>
-
-              <div class="journey-timeline" data-aos="fade-up" data-aos-delay="300">
-                <div class="timeline-item">
-                  <div class="year">2021</div>
-                  <div class="description">Diplômé en Design graphique à Master TIC</div>
-                </div>
-                <div class="timeline-item">
-                  <div class="year">2022</div>
-                  <div class="description">Diplômé en Développement Web à EIG Bénin</div>
-                </div>
-                <div class="timeline-item">
-                  <div class="year">2023</div>
-                  <div class="description">Diplômé en Programmation mobile à EIG Bénin</div>
-                </div>
-              </div>
-
-              <div class="cta-section" data-aos="fade-up" data-aos-delay="400">
-                <div class="fun-fact">
-                  <span class="emoji">☕</span>
-                  <span class="text">Designer alimenté de café</span>
-                </div>
-                <div class="action-buttons">
-                  <a href="#portfolio" class="btn btn-primary">Voir mon travail</a>
-                  <a href="#" class="btn btn-outline">Télécharger mon CV</a>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="skills-grid">
-              <div class="row g-4">
-                <div class="col-md-6" data-aos="flip-left" data-aos-delay="200">
-                  <div class="skill-card">
-                    <div class="skill-header">
-                      <i class="bi bi-code-slash"></i>
-                      <h3>Développement Frontend</h3>
-                    </div>
-                    <div class="skills-animation">
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">HTML/CSS</span>
-                          <span class="skill-percentage">95%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">JavaScript</span>
-                          <span class="skill-percentage">80%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Next.js</span>
-                          <span class="skill-percentage">60%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">React.js</span>
-                          <span class="skill-percentage">60%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- End Frontend Card -->
-                </div>
-
-                <div class="col-md-6" data-aos="flip-left" data-aos-delay="300">
-                  <div class="skill-card">
-                    <div class="skill-header">
-                      <i class="bi bi-server"></i>
-                      <h3>Développement Backend</h3>
-                    </div>
-                    <div class="skills-animation">
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">PHP</span>
-                          <span class="skill-percentage">90%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Laravel</span>
-                          <span class="skill-percentage">80%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">MySQL</span>
-                          <span class="skill-percentage">72%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- End Backend Card -->
-                </div>
-
-                <div class="col-md-6" data-aos="flip-left" data-aos-delay="500">
-                  <div class="skill-card">
-                    <div class="skill-header">
-                      <i class="bi bi-cloud"></i>
-                      <h3>Programmation mobile</h3>
-                    </div>
-                    <div class="skills-animation">
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Flutter</span>
-                          <span class="skill-percentage">90%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Java</span>
-                          <span class="skill-percentage">70%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Swift</span>
-                          <span class="skill-percentage">50%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div><!-- End DevOps Card -->
-                </div>
-
-                <div class="col-md-6" data-aos="flip-left" data-aos-delay="400">
-                  <div class="skill-card">
-                    <div class="skill-header">
-                      <i class="bi bi-palette"></i>
-                      <h3>Design & Outils</h3>
-                    </div>
-                    <div class="skills-animation">
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Figma</span>
-                          <span class="skill-percentage">75%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Photoshop</span>
-                          <span class="skill-percentage">95%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Illustrator</span>
-                          <span class="skill-percentage">75%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- End Design Card -->
-                </div>
-
-                <div class="col-md-6" data-aos="flip-left" data-aos-delay="500">
-                  <div class="skill-card">
-                    <div class="skill-header">
-                      <i class="bi bi-cloud"></i>
-                      <h3>Frameworks</h3>
-                    </div>
-                    <div class="skills-animation">
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Bootstrap</span>
-                          <span class="skill-percentage">98%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                      <div class="skill-item">
-                        <div class="skill-info">
-                          <span class="skill-name">Tailwind CSS</span>
-                          <span class="skill-percentage">70%</span>
-                        </div>
-                        <div class="skill-bar progress">
-                          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div><!-- End DevOps Card -->
-                </div>
-
-                
-              </div>
-            </div><!-- End Skills Grid -->
-          </div>
-
-          <div class="col-lg-4">
-            <div class="skills-summary" data-aos="fade-left" data-aos-delay="200">
-              <h3>Expertise Professionnelle</h3>
-              <p>Je combine expertise technique et créativité pour développer des solutions innovantes qui répondent aux besoins spécifiques de chaque projet.</p>
-
-              <div class="summary-stats">
-                <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
-                  <div class="stat-circle">
-                    <i class="bi bi-trophy"></i>
-                  </div>
-                  <div class="stat-info">
-                    <span class="stat-number">3+</span>
+                  <div class="stat-item">
+                    <span
+                      class="purecounter"
+                      data-purecounter-start="0"
+                      data-purecounter-end="3"
+                      data-purecounter-duration="2"
+                      >0</span
+                    >
                     <span class="stat-label">Années d'expérience</span>
                   </div>
-                </div>
-
-                <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
-                  <div class="stat-circle">
-                    <i class="bi bi-diagram-3"></i>
-                  </div>
-                  <div class="stat-info">
-                    <span class="stat-number">50+</span>
-                    <span class="stat-label">Projets réalisés</span>
-                  </div>
-                </div>
-
-                <div class="stat-item" data-aos="zoom-in" data-aos-delay="500">
-                  <div class="stat-circle">
-                    <i class="bi bi-people"></i>
-                  </div>
-                  <div class="stat-info">
-                    <span class="stat-number">20+</span>
+                  <div class="stat-item">
+                    <span
+                      class="purecounter"
+                      data-purecounter-start="0"
+                      data-purecounter-end="21"
+                      data-purecounter-duration="2"
+                      >0</span
+                    >
                     <span class="stat-label">Clients satisfaits</span>
                   </div>
                 </div>
-              </div>
 
-              <div class="skills-badges" data-aos="fade-up" data-aos-delay="600">
-                <h4>Certifications</h4>
-                <div class="badge-list">
-                  <div class="skill-badge">Expert Laravel</div>
-                  <div class="skill-badge">Développeur Bootstrap</div>
-                  <div class="skill-badge">Design graphique</div>
-                  <div class="skill-badge">Programmeur Flutter</div>
-                </div>
-              </div>
-            </div><!-- End Skills Summary -->
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Skills Section -->
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <!-- Section Title -->
-      <div class="container section-title">
-        <h2>CV</h2>
-        <p>Mon parcours professionnel et académique</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-            <div class="experience-section">
-              <div class="section-header">
-                <h2><i class="bi bi-briefcase"></i> Parcours Professionnel</h2>
-                <p class="section-subtitle">Expériences variées dans le domaine du développement et du design.</p>
-              </div>
-
-              <div class="experience-cards">
-                <div class="experience-card" data-aos="zoom-in" data-aos-delay="300">
-                  <div class="card-header">
-                    <div class="role-info">
-                      <h3>Directeur Technique</h3>
-                      <h4>Proin Corporation</h4>
-                    </div>
-                    <span class="duration">2022 - Présent</span>
-                  </div>
-                  <div class="card-body">
-                    <p>Direction des équipes techniques et mise en œuvre de stratégies de développement innovantes.</p>
-                    <ul class="achievements">
-                      <li>Gestion d'équipes pluridisciplinaires de 15+ professionnels</li>
-                      <li>Implémentation de méthodologies agiles avec gain d'efficacité de 40%</li>
-                      <li>Direction d'initiatives de transformation digitale d'une valeur de 2M+</li>
-                    </ul>
-                  </div>
+                <div
+                  class="hero-actions"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <a href="#portfolio" class="btn btn-primary"
+                    >Voir mon travail</a
+                  >
+                  <a href="#contact" class="btn btn-outline">Me contacter</a>
                 </div>
 
-                <div class="experience-card" data-aos="zoom-in" data-aos-delay="400">
-                  <div class="card-header">
-                    <div class="role-info">
-                      <h3>Manager Développement Senior</h3>
-                      <h4>Consectetur Solutions Inc</h4>
-                    </div>
-                    <span class="duration">2018 - 2022</span>
-                  </div>
-                  <div class="card-body">
-                    <p>Gestion de projets complexes et coordination d'équipes de développement.</p>
-                  </div>
-                </div>
-
-                <div class="experience-card" data-aos="zoom-in" data-aos-delay="500">
-                  <div class="card-header">
-                    <div class="role-info">
-                      <h3>Spécialiste Développement Produit</h3>
-                      <h4>Adipiscing Technologies</h4>
-                    </div>
-                    <span class="duration">2015 - 2018</span>
-                  </div>
-                  <div class="card-body">
-                    <p>Conception et développement de produits innovants pour divers secteurs d'activité.</p>
-                  </div>
+                <div
+                  class="social-links"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <a href="https://www.facebook.com/algor.adoko.3" class="facebook"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="https://wa.me/22996955063" class="whatsapp"
+              ><i class="bi bi-whatsapp"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/osvald-adoko-7a3ab3235"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/Osvald367" target="_blank">
+              <i class="bi bi-github"></i>
+            </a>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
-            <div class="education-section">
-              <div class="section-header">
-                <h2><i class="bi bi-mortarboard"></i> Formation Académique</h2>
-                <p class="section-subtitle">Parcours éducatif et formations spécialisées.</p>
-              </div>
-
-              <div class="education-timeline">
-                <div class="timeline-track"></div>
-
-                <div class="education-item" data-aos="slide-up" data-aos-delay="300">
-                  <div class="timeline-marker"></div>
-                  <div class="education-content">
-                    <div class="degree-header">
-                      <h3>Master en Informatique</h3>
-                      <span class="year">2015 - 2017</span>
-                    </div>
-                    <h4 class="institution">Université Tempus</h4>
-                    <p>Spécialisation en développement d'applications et architectures cloud.</p>
+            <div
+              class="col-lg-6 hero-image"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
+              <div class="image-container">
+                <div class="floating-elements">
+                  <div
+                    class="floating-card card-1"
+                    data-aos="zoom-in"
+                    data-aos-delay="300"
+                  >
+                    <i class="bi bi-palette"></i>
+                    <span>Design UI/UX</span>
+                  </div>
+                  <div
+                    class="floating-card card-2"
+                    data-aos="zoom-in"
+                    data-aos-delay="400"
+                  >
+                    <i class="bi bi-code-slash"></i>
+                    <span>Développement</span>
+                  </div>
+                  <div
+                    class="floating-card card-3"
+                    data-aos="zoom-in"
+                    data-aos-delay="500"
+                  >
+                    <i class="bi bi-lightning"></i>
+                    <span>Idées créatives</span>
                   </div>
                 </div>
-
-                <div class="education-item" data-aos="slide-up" data-aos-delay="400">
-                  <div class="timeline-marker"></div>
-                  <div class="education-content">
-                    <div class="degree-header">
-                      <h3>Licence en Technologies de l'Information</h3>
-                      <span class="year">2011 - 2015</span>
-                    </div>
-                    <h4 class="institution">Institut de Technologie Rhoncus</h4>
-                    <p>Formation générale en informatique avec spécialisation en développement web.</p>
-                  </div>
-                </div>
-
-                <div class="education-item" data-aos="slide-up" data-aos-delay="500">
-                  <div class="timeline-marker"></div>
-                  <div class="education-content">
-                    <div class="degree-header">
-                      <h3>Certificat en Innovation Digitale</h3>
-                      <span class="year">2020</span>
-                    </div>
-                    <h4 class="institution">Académie Ligula</h4>
-                    <p>Formation avancée sur les tendances émergentes en innovation digitale.</p>
-                  </div>
-                </div>
+                <img
+                  src="assets/img/profile/profile-square-1.webp"
+                  alt="Portfolio Hero"
+                  class="img-fluid hero-main-image"
+                />
+                <div class="image-overlay"></div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+      <!-- /Hero Section -->
 
-      </div>
-
-    </section><!-- /Resume Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title">
-        <h2>Services</h2>
-        <p>Solutions sur mesure pour répondre à vos besoins digitaux</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row g-4">
-
-          <!-- Card 1 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item">
-              <div class="icon">
-                <i class="bi bi-stack"></i>
-              </div>
-              <h3>Solutions Digitales</h3>
-              <p>Conception et développement de solutions digitales complètes adaptées à vos besoins spécifiques.</p>
-              <div class="card-links">
-                <a href="#" class="link-item">
-                  En savoir plus
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <!-- Card 2 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item">
-              <div class="icon">
-                <i class="bi bi-shield-check"></i>
-              </div>
-              <h3>Systèmes Sécurisés</h3>
-              <p>Mise en place de systèmes robustes avec une attention particulière à la sécurité des données.</p>
-              <div class="card-links">
-                <a href="#" class="link-item">
-                  En savoir plus
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <!-- Card 3 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item">
-              <div class="icon">
-                <i class="bi bi-graph-up"></i>
-              </div>
-              <h3>Stratégie de Croissance</h3>
-              <p>Accompagnement dans l'élaboration de stratégies digitales pour booster votre croissance.</p>
-              <div class="card-links">
-                <a href="#" class="link-item">
-                  En savoir plus
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <!-- Card 4 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item">
-              <div class="icon">
-                <i class="bi bi-cpu"></i>
-              </div>
-              <h3>Intégration IA</h3>
-              <p>Implémentation de solutions d'intelligence artificielle pour automatiser et optimiser vos processus.</p>
-              <div class="card-links">
-                <a href="#" class="link-item">
-                  En savoir plus
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <!-- Card 5 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item">
-              <div class="icon">
-                <i class="bi bi-cloud-arrow-up"></i>
-              </div>
-              <h3>Services Cloud</h3>
-              <p>Migration, gestion et optimisation de vos infrastructures cloud pour plus de flexibilité.</p>
-              <div class="card-links">
-                <a href="#" class="link-item">
-                  En savoir plus
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <!-- Card 6 -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item">
-              <div class="icon">
-                <i class="bi bi-gear"></i>
-              </div>
-              <h3>Automatisation de Processus</h3>
-              <p>Conception de systèmes automatisés pour optimiser votre productivité et réduire les erreurs.</p>
-              <div class="card-links">
-                <a href="#" class="link-item">
-                  En savoir plus
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
+      <!-- About Section -->
+      <section id="about" class="about section">
+        <!-- Section Title -->
+        <div class="container section-title">
+          <h2>À propos</h2>
+          <p>
+            Découvrez mon parcours, mes compétences et ma passion pour le
+            développement
+          </p>
         </div>
+        <!-- End Section Title -->
 
-      </div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-center">
+            <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+              <div class="profile-image-wrapper">
+                <div class="profile-image">
+                  <img
+                    src="assets/img/profile/profile-square-1.webp"
+                    alt="Profil"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="signature-section">
+                  <img
+                    src="assets/img/misc/signature-1.webp"
+                    alt="Signature"
+                    class="signature"
+                  />
+                  <p class="quote">
+                    Construire des expériences numériques significatives grâce à
+                    un code créatif.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-    </section><!-- /Services Section -->
+            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+              <div class="about-content">
+                <div class="intro">
+                  <h2>Bonjour, je suis Osvald - un Développeur Créatif</h2>
+                  <p>
+                    Je suis un développeur passionné par la création
+                    d'expériences numériques innovantes. Mon approche combine
+                    expertise technique et sensibilité design pour produire des
+                    solutions qui allient fonctionnalité et esthétique.
+                  </p>
+                </div>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+                <div class="skills-grid">
+                  <div
+                    class="skill-item"
+                    data-aos="zoom-in"
+                    data-aos-delay="400"
+                  >
+                    <div class="skill-icon">
+                      <i class="bi bi-palette"></i>
+                    </div>
+                    <h4>Design graphique</h4>
+                    <p>
+                      Création d'interfaces utilisateur intuitives et
+                      attrayantes
+                    </p>
+                  </div>
+                  <div
+                    class="skill-item"
+                    data-aos="zoom-in"
+                    data-aos-delay="450"
+                  >
+                    <div class="skill-icon">
+                      <i class="bi bi-code-slash"></i>
+                    </div>
+                    <h4>Développement Frontend</h4>
+                    <p>
+                      Développement d'applications web interactives et réactives
+                    </p>
+                  </div>
+                  <div
+                    class="skill-item"
+                    data-aos="zoom-in"
+                    data-aos-delay="500"
+                  >
+                    <div class="skill-icon">
+                      <i class="bi bi-code-slash"></i>
+                    </div>
+                    <h4>Développement Backend</h4>
+                    <p>Développement de backends robustes et scalables</p>
+                  </div>
+                </div>
 
-      <!-- Section Title -->
-      <div class="container section-title">
-        <h2>Portfolio</h2>
-        <p>Découvrez une sélection de mes réalisations</p>
-      </div><!-- End Section Title -->
-
-      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
-            <li data-filter="*" class="filter-active">
-              <i class="bi bi-grid-3x3"></i> Tous les projets
-            </li>
-            <li data-filter=".filter-ui">
-              UI/UX
-            </li>
-            <li data-filter=".filter-development">
-              Développement
-            </li>
-            <li data-filter=".filter-photography">
-              Photographie
-            </li>
-            <li data-filter=".filter-marketing">
-              Marketing
-            </li>
-          </ul>
-
-          <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-1.webp" class="img-fluid" alt="Application mobile bancaire" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Design UI/UX</div>
-                      <h3 class="entry-title">Application Bancaire Mobile</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-1.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Application Bancaire Mobile; description: Conception d'une interface utilisateur intuitive pour une application bancaire mobile.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
+                <div
+                  class="journey-timeline"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <div class="timeline-item">
+                    <div class="year">2021</div>
+                    <div class="description">
+                      Diplômé en Design graphique à Master TIC
                     </div>
                   </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-10.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Development</div>
-                      <h3 class="entry-title">E-Learning Platform</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-10.webp" class="glightbox" data-gallery="portfolio-gallery-development" data-glightbox="title: E-Learning Platform; description: Nulla vitae elit libero, a pharetra augue mollis interdum.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
+                  <div class="timeline-item">
+                    <div class="year">2022</div>
+                    <div class="description">
+                      Diplômé en Développement Web à EIG Bénin
                     </div>
                   </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Photography</div>
-                      <h3 class="entry-title">Urban Architecture</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-7.webp" class="glightbox" data-gallery="portfolio-gallery-photography" data-glightbox="title: Urban Architecture; description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
+                  <div class="timeline-item">
+                    <div class="year">2023</div>
+                    <div class="description">
+                      Diplômé en Programmation mobile à EIG Bénin
                     </div>
                   </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
+                </div>
 
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-4.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Marketing</div>
-                      <h3 class="entry-title">Social Media Campaign</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-4.webp" class="glightbox" data-gallery="portfolio-gallery-marketing" data-glightbox="title: Social Media Campaign; description: Quis autem vel eum iure reprehenderit qui in ea voluptate.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
+                <div
+                  class="cta-section"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <div class="fun-fact">
+                    <span class="emoji">☕</span>
+                    <span class="text">Designer alimenté de café</span>
                   </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">UI/UX Design</div>
-                      <h3 class="entry-title">Smart Home Interface</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-2.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Smart Home Interface; description: At vero eos et accusamus et iusto odio dignissimos ducimus.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
+                  <div class="action-buttons">
+                    <a href="#portfolio" class="btn btn-primary"
+                      >Voir mon travail</a
+                    >
+                    <a href="#" class="btn btn-outline">Télécharger mon CV</a>
                   </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-11.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Development</div>
-                      <h3 class="entry-title">Cloud Management System</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-11.webp" class="glightbox" data-gallery="portfolio-gallery-development" data-glightbox="title: Cloud Management System; description: Temporibus autem quibusdam et aut officiis debitis.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-8.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Photography</div>
-                      <h3 class="entry-title">Nature Collection</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-8.webp" class="glightbox" data-gallery="portfolio-gallery-photography" data-glightbox="title: Nature Collection; description: Integer posuere erat a ante venenatis dapibus posuere velit aliquet.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/portfolio/portfolio-5.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Marketing</div>
-                      <h3 class="entry-title">Brand Strategy</h3>
-                      <div class="entry-links">
-                        <a href="assets/img/portfolio/portfolio-5.webp" class="glightbox" data-gallery="portfolio-gallery-marketing" data-glightbox="title: Brand Strategy; description: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        <a href="portfolio-details.html">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
+      <!-- /About Section -->
 
-      </div>
+      <!-- Skills Section -->
+      <section id="skills" class="skills section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="skills-grid">
+                <div class="row g-4">
+                  <div
+                    class="col-md-6"
+                    data-aos="flip-left"
+                    data-aos-delay="200"
+                  >
+                    <div class="skill-card">
+                      <div class="skill-header">
+                        <i class="bi bi-code-slash"></i>
+                        <h3>Développement Frontend</h3>
+                      </div>
+                      <div class="skills-animation">
+                        <div class="skill-item">
+                          <div class="skill-info">
+                            <span class="skill-name">HTML/CSS</span>
+                            <span class="skill-percentage">95%</span>
+                          </div>
+                          <div class="skill-bar progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              aria-valuenow="95"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
 
-    </section><!-- /Portfolio Section -->
+                        <div class="skill-item">
+                          <div class="skill-info">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percentage">80%</span>
+                          </div>
+                          <div class="skill-bar progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              aria-valuenow="80"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
-      <!-- Section Title -->
-      <div class="container section-title">
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+                        <div class="skill-item">
+                          <div class="skill-info">
+                            <span class="skill-name">Next.js</span>
+                            <span class="skill-percentage">60%</span>
+                          </div>
+                          <div class="skill-bar progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              aria-valuenow="60"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row">
-          <div class="col-12">
-            <div class="critic-reviews" data-aos="fade-up" data-aos-delay="300">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="critic-review">
-                    <div class="review-quote">"</div>
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
+                        <div class="skill-item">
+                          <div class="skill-info">
+                            <span class="skill-name">React.js</span>
+                            <span class="skill-percentage">60%</span>
+                          </div>
+                          <div class="skill-bar progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              aria-valuenow="60"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <p>Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
-                    <div class="critic-info">
-                      <div class="critic-name">The New York Times</div>
+                    <!-- End Frontend Card -->
+                  </div>
+
+                  <div
+                    class="col-md-6"
+                    data-aos="flip-left"
+                    data-aos-delay="300"
+                  >
+                    <div class="skill-card">
+                      <div class="skill-header">
+                        <i class="bi bi-server"></i>
+                        <h3>Développement Backend</h3>
+                      </div>
+                      <div class="skills-animation">
+                        <div class="skill-item">
+                          <div class="skill-info">
+                            <span class="skill-name">PHP</span>
+                            <span class="skill-percentage">90%</span>
+                          </div>
+                          <div class="skill-bar progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              aria-valuenow="90"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+
+                        <div class="skill-item">
+                          <div class="skill-info">
+                            <span class="skill-name">Laravel</span>
+                            <span class="skill-percentage">80%</span>
+                          </div>
+                          <div class="skill-bar progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              aria-valuenow="80"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+
+                        <div class="skill-item">
+                          <div class="skill-info">
+                            <span class="skill-name">MySQL</span>
+                            <span class="skill-percentage">72%</span>
+                          </div>
+                          <div class="skill-bar progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              aria-valuenow="72"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Backend Card -->
+                  </div>
+
+                  <div
+                    class="col-md-6"
+                    data-aos="flip-left"
+                    data-aos-delay="500"
+                  >
+                    <div class="skill-card">
+                      <div class="skill-header">
+                        <i class="bi bi-cloud"></i>
+                        <h3>Programmation mobile</h3>
+                      </div>
+                      <div class="skills-animation">
+                        <div class="skill-item">
+                          <div class="skill-info">
+                            <span class="skill-name">Flutter</span>
+                            <span class="skill-percentage">90%</span>
+                          </div>
+                          <div class="skill-bar progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              aria-valuenow="90"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+
+                        <div class="skill-item">
+                          <div class="skill-info">
+                            <span class="skill-name">Java</span>
+                            <span class="skill-percentage">70%</span>
+                          </div>
+                          <div class="skill-bar progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              aria-valuenow="70"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+
+                        <div class="skill-item">
+                          <div class="skill-info">
+                            <span class="skill-name">Swift</span>
+                            <span class="skill-percentage">50%</span>
+                          </div>
+                          <div class="skill-bar progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              aria-valuenow="50"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End DevOps Card -->
+                  </div>
+
+                  <div
+                    class="col-md-6"
+                    data-aos="flip-left"
+                    data-aos-delay="400"
+                  >
+                    <div class="skill-card">
+                      <div class="skill-header">
+                        <i class="bi bi-palette"></i>
+                        <h3>Design & Outils</h3>
+                      </div>
+                      <div class="skills-animation">
+                        <div class="skill-item">
+                          <div class="skill-info">
+                            <span class="skill-name">Figma</span>
+                            <span class="skill-percentage">75%</span>
+                          </div>
+                          <div class="skill-bar progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              aria-valuenow="75"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+
+                        <div class="skill-item">
+                          <div class="skill-info">
+                            <span class="skill-name">Photoshop</span>
+                            <span class="skill-percentage">95%</span>
+                          </div>
+                          <div class="skill-bar progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              aria-valuenow="95"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+
+                        <div class="skill-item">
+                          <div class="skill-info">
+                            <span class="skill-name">Illustrator</span>
+                            <span class="skill-percentage">75%</span>
+                          </div>
+                          <div class="skill-bar progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              aria-valuenow="75"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Design Card -->
+                  </div>
+
+                  <div
+                    class="col-md-6"
+                    data-aos="flip-left"
+                    data-aos-delay="500"
+                  >
+                    <div class="skill-card">
+                      <div class="skill-header">
+                        <i class="bi bi-cloud"></i>
+                        <h3>Frameworks</h3>
+                      </div>
+                      <div class="skills-animation">
+                        <div class="skill-item">
+                          <div class="skill-info">
+                            <span class="skill-name">Bootstrap</span>
+                            <span class="skill-percentage">98%</span>
+                          </div>
+                          <div class="skill-bar progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              aria-valuenow="98"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+
+                        <div class="skill-item">
+                          <div class="skill-info">
+                            <span class="skill-name">Tailwind CSS</span>
+                            <span class="skill-percentage">70%</span>
+                          </div>
+                          <div class="skill-bar progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              aria-valuenow="70"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End DevOps Card -->
+                  </div>
+                </div>
+              </div>
+              <!-- End Skills Grid -->
+            </div>
+
+            <div class="col-lg-4">
+              <div
+                class="skills-summary"
+                data-aos="fade-left"
+                data-aos-delay="200"
+              >
+                <h3>Expertise Professionnelle</h3>
+                <p>
+                  Je combine expertise technique et créativité pour développer
+                  des solutions innovantes qui répondent aux besoins spécifiques
+                  de chaque projet.
+                </p>
+
+                <div class="summary-stats">
+                  <div
+                    class="stat-item"
+                    data-aos="zoom-in"
+                    data-aos-delay="300"
+                  >
+                    <div class="stat-circle">
+                      <i class="bi bi-trophy"></i>
+                    </div>
+                    <div class="stat-info">
+                      <span class="stat-number">3+</span>
+                      <span class="stat-label">Années d'expérience</span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="stat-item"
+                    data-aos="zoom-in"
+                    data-aos-delay="400"
+                  >
+                    <div class="stat-circle">
+                      <i class="bi bi-diagram-3"></i>
+                    </div>
+                    <div class="stat-info">
+                      <span class="stat-number">50+</span>
+                      <span class="stat-label">Projets réalisés</span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="stat-item"
+                    data-aos="zoom-in"
+                    data-aos-delay="500"
+                  >
+                    <div class="stat-circle">
+                      <i class="bi bi-people"></i>
+                    </div>
+                    <div class="stat-info">
+                      <span class="stat-number">20+</span>
+                      <span class="stat-label">Clients satisfaits</span>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4">
-                  <div class="critic-review">
-                    <div class="review-quote">"</div>
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-half"></i>
-                    </div>
-                    <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla quis lorem ut libero malesuada feugiat.</p>
-                    <div class="critic-info">
-                      <div class="critic-name">Washington Post</div>
-                    </div>
+
+                <div
+                  class="skills-badges"
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                >
+                  <h4>Certifications</h4>
+                  <div class="badge-list">
+                    <div class="skill-badge">Expert Laravel</div>
+                    <div class="skill-badge">Développeur Bootstrap</div>
+                    <div class="skill-badge">Design graphique</div>
+                    <div class="skill-badge">Programmeur Flutter</div>
                   </div>
                 </div>
-                <div class="col-md-4">
-                  <div class="critic-review">
-                    <div class="review-quote">"</div>
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
+              </div>
+              <!-- End Skills Summary -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Skills Section -->
+
+      <!-- Resume Section -->
+      <section id="resume" class="resume section">
+        <!-- Section Title -->
+        <div class="container section-title">
+          <h2>CV</h2>
+          <p>Mon parcours professionnel et académique</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+              <div class="experience-section">
+                <div class="section-header">
+                  <h2>
+                    <i class="bi bi-briefcase"></i> Parcours Professionnel
+                  </h2>
+                  <p class="section-subtitle">
+                    Expériences variées dans le domaine du développement et du
+                    design.
+                  </p>
+                </div>
+
+                <div class="experience-cards">
+                  <div
+                    class="experience-card"
+                    data-aos="zoom-in"
+                    data-aos-delay="300"
+                  >
+                    <div class="card-header">
+                      <div class="role-info">
+                        <h3>Directeur Executif</h3>
+                        <h4>Nextmux.sarl</h4>
+                      </div>
+                      <span class="duration">2024 - Présent</span>
                     </div>
-                    <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
-                    <div class="critic-info">
-                      <div class="critic-name">The Guardian</div>
+                    <div class="card-body">
+                      <p>
+                        Direction des équipes techniques et mise en œuvre de
+                        stratégies de développement innovantes.
+                      </p>
+                      <ul class="achievements">
+                        <li>
+                          Gestion d'équipes pluridisciplinaires de 15+
+                          professionnels
+                        </li>
+                        <li>
+                          Implémentation de méthodologies agiles avec gain
+                          d'efficacité de 40%
+                        </li>
+                        <li>
+                          Direction d'initiatives de transformation digitale
+                          d'une valeur de 2M+
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div
+                    class="experience-card"
+                    data-aos="zoom-in"
+                    data-aos-delay="400"
+                  >
+                    <div class="card-header">
+                      <div class="role-info">
+                        <h3>Developpeur Fullstack</h3>
+                        <h4>ONG JVE Bénin</h4>
+                      </div>
+                      <span class="duration"
+                        >septembre 2023 - décembre 2023</span
+                      >
+                    </div>
+                    <div class="card-body">
+                      <p>
+                        Gestion principales de la mise a jour et de la
+                        maintenance du site web de l'ONG JVE Bénin.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="experience-card"
+                    data-aos="zoom-in"
+                    data-aos-delay="500"
+                  >
+                    <div class="card-header">
+                      <div class="role-info">
+                        <h3>Développeur Fullstack Attitré</h3>
+                        <h4>Wodossi</h4>
+                      </div>
+                      <span class="duration">2022 - présent</span>
+                    </div>
+                    <div class="card-body">
+                      <p>
+                        Conception et développement du site e-commerce de
+                        Wodossi.
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="testimonials-container">
-              <div class="swiper testimonials-slider init-swiper" data-aos="fade-up" data-aos-delay="400">
-                <script type="application/json" class="swiper-config">
-                  {
-                    "loop": true,
-                    "speed": 600,
-                    "autoplay": {
-                      "delay": 5000
-                    },
-                    "slidesPerView": 1,
-                    "spaceBetween": 30,
-                    "pagination": {
-                      "el": ".swiper-pagination",
-                      "type": "bullets",
-                      "clickable": true
-                    },
-                    "breakpoints": {
-                      "768": {
-                        "slidesPerView": 2
-                      },
-                      "992": {
-                        "slidesPerView": 3
-                      }
-                    }
-                  }
-                </script>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+              <div class="education-section">
+                <div class="section-header">
+                  <h2>
+                    <i class="bi bi-mortarboard"></i> Formation Académique
+                  </h2>
+                  <p class="section-subtitle">
+                    Parcours éducatif et formations spécialisées.
+                  </p>
+                </div>
 
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
+                <div class="education-timeline">
+                  <div class="timeline-track"></div>
+
+                  <div
+                    class="education-item"
+                    data-aos="slide-up"
+                    data-aos-delay="300"
+                  >
+                    <div class="timeline-marker"></div>
+                    <div class="education-content">
+                      <div class="degree-header">
+                        <h3>Programmation Mobile</h3>
+                        <span class="year">2024 - 2025</span>
+                      </div>
+                      <h4 class="institution">EIG Bénin</h4>
+                      <p>
+                        Formation en programmation mobile avec specialisation en
+                        Flutter.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="education-item"
+                    data-aos="slide-up"
+                    data-aos-delay="400"
+                  >
+                    <div class="timeline-marker"></div>
+                    <div class="education-content">
+                      <div class="degree-header">
+                        <h3>Développement Web</h3>
+                        <span class="year">2022 - 2023</span>
+                      </div>
+                      <h4 class="institution">EIG Bénin</h4>
+                      <p>Formation en programmation web</p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="education-item"
+                    data-aos="slide-up"
+                    data-aos-delay="500"
+                  >
+                    <div class="timeline-marker"></div>
+                    <div class="education-content">
+                      <div class="degree-header">
+                        <h3>Design graphique</h3>
+                        <span class="year">2021 - 2022</span>
+                      </div>
+                      <h4 class="institution">Master TIC</h4>
+                      <p>
+                        Formation en design graphique avec specialisation en
+                        contenu web
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="education-item"
+                    data-aos="slide-up"
+                    data-aos-delay="500"
+                  >
+                    <div class="timeline-marker"></div>
+                    <div class="education-content">
+                      <div class="degree-header">
+                        <h3>ComeUP</h3>
+                        <span class="year">2021 - 2022</span>
+                      </div>
+                      <h4 class="institution">Hylarion center</h4>
+                      <p>Formation en vente de services digitales sur COMEUP</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Resume Section -->
+
+      <!-- Services Section -->
+      <section id="services" class="services section">
+        <!-- Section Title -->
+        <div class="container section-title">
+          <h2>Services</h2>
+          <p>Solutions sur mesure pour répondre à vos besoins digitaux</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="service-item">
+                <div class="icon">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <h3>Développement Web</h3>
+                <p>
+                  Nous développons des sites web modernes, rapides et sécurisés,
+                  adaptés à vos objectifs business et à vos utilisateurs.
+                </p>
+                <div class="card-links">
+                  <a
+                    href="service-details.html?slug=developpement-web"
+                    class="link-item"
+                  >
+                    En savoir plus
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <!-- Card 2 -->
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-item">
+                <div class="icon">
+                  <i class="bi bi-phone"></i>
+                </div>
+                <h3>Développement Mobile</h3>
+                <p>
+                  Nous créons des applications mobiles rapides, ergonomiques et
+                  orientées utilisateur pour répondre à vos besoins métiers.
+                </p>
+                <div class="card-links">
+                  <a
+                    href="service-details.html?slug=developpement-mobile"
+                    class="link-item"
+                  >
+                    En savoir plus
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <!-- Card 3 -->
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="service-item">
+                <div class="icon">
+                  <i class="bi bi-brush"></i>
+                </div>
+                <h3>Design UI/UX</h3>
+                <p>
+                  Un bon design, ce n’est pas seulement ce qui est beau, c’est
+                  aussi ce qui est clair, logique et agréable à utiliser.
+                </p>
+                <div class="card-links">
+                  <a
+                    href="service-details.html?slug=design-ui-ux"
+                    class="link-item"
+                  >
+                    En savoir plus
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <!-- Card 4 -->
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="service-item">
+                <div class="icon">
+                  <i class="bi bi-card-image"></i>
+                </div>
+                <h3>Identité Visuelle</h3>
+                <p>
+                  Une image forte et cohérente est la première étape pour vous
+                  faire remarquer et mémoriser.
+                </p>
+                <div class="card-links">
+                  <a
+                    href="service-details.html?slug=identite-visuelle"
+                    class="link-item"
+                  >
+                    En savoir plus
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <!-- Card 5 -->
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-item">
+                <div class="icon">
+                  <i class="bi bi-images"></i>
+                </div>
+                <h3>Supports Visuels</h3>
+                <p>
+                  Faites passer vos messages efficacement grâce à des supports
+                  graphiques percutants et professionnels.
+                </p>
+                <div class="card-links">
+                  <a
+                    href="service-details.html?slug=supports-visuels"
+                    class="link-item"
+                  >
+                    En savoir plus
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <!-- Card 6 -->
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="service-item">
+                <div class="icon">
+                  <i class="bi bi-gear"></i>
+                </div>
+                <h3>Maintenance & Assistance</h3>
+                <p>
+                  Parce qu’un bon projet ne s’arrête pas à sa mise en ligne,
+                  nous restons à vos côtés pour l’entretenir et le faire
+                  évoluer.
+                </p>
+                <div class="card-links">
+                  <a
+                    href="service-details.html?slug=maintenance-support"
+                    class="link-item"
+                  >
+                    En savoir plus
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Item -->
+          </div>
+        </div>
+      </section>
+      <!-- /Services Section -->
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section">
+        <!-- Section Title -->
+        <div class="container section-title">
+          <h2>Portfolio</h2>
+          <p>Découvrez une sélection de mes réalisations</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <ul
+              class="portfolio-filters isotope-filters"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <li data-filter="*" class="filter-active">
+                <i class="bi bi-grid-3x3"></i> Tous les projets
+              </li>
+              <li data-filter=".filter-ui">UI/UX</li>
+              <li data-filter=".filter-development">Développement WEB</li>
+              <li data-filter=".filter-programmation">Programmation Mobile</li>
+              <li data-filter=".filter-identite">Identité visuelle</li>
+            </ul>
+
+            <div
+              class="row g-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div
+                class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui"
+              >
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img
+                      src="assets/img/portfolio/portfolio-services-ui-ux-2-1.webp"
+                      class="img-fluid"
+                      alt="Application mobile bancaire"
+                      loading="lazy"
+                    />
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Design UI/UX</div>
+                        <h3 class="entry-title">
+                          App de reservation de billets d'avion
+                        </h3>
+                        <div class="entry-links">
+                          <a
+                            href="assets/img/portfolio/portfolio-services-ui-ux-2-1.webp"
+                            class="glightbox"
+                            data-gallery="portfolio-gallery-ui"
+                            data-glightbox="title: App de reservation de billets d'avion; description: Une application de reservation de billets d'avion avec une interface fluide."
+                          >
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html?id=project-1">
+                            <i class="bi bi-arrow-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development"
+              >
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img
+                      src="assets/img/portfolio/portfolio-services-developpement-wodossi-2-1.webp"
+                      class="img-fluid"
+                      alt=""
+                      loading="lazy"
+                    />
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Développement WEB</div>
+                        <h3 class="entry-title">Wodossi</h3>
+                        <div class="entry-links">
+                          <a
+                            href="assets/img/portfolio/portfolio-services-developpement-wodossi-2-1.webp"
+                            class="glightbox"
+                            data-gallery="portfolio-gallery-development"
+                            data-glightbox="title: Wodossi; description: Une boutique de vente en ligne pour Wodossi."
+                          >
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html?id=project-2">
+                            <i class="bi bi-arrow-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-identite"
+              >
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img
+                      src="assets/img/portfolio/portfolio-services-graphisme-Ap-1-1.webp"
+                      class="img-fluid"
+                      alt=""
+                      loading="lazy"
+                    />
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Identité visuelle</div>
+                        <h3 class="entry-title">Appareil Pro</h3>
+                        <div class="entry-links">
+                          <a
+                            href="assets/img/portfolio/portfolio-services-graphisme-Ap-1-1.webp"
+                            class="glightbox"
+                            data-gallery="portfolio-gallery-development"
+                            data-glightbox="title: Appareil Pro; description: Une boutique de vente de produits élèctromenagers en ligne."
+                          >
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html?id=project-3">
+                            <i class="bi bi-arrow-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-programmation"
+              >
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img
+                      src="assets/img/portfolio/portfolio-services-programmation-lovecity-1-0.webp"
+                      class="img-fluid"
+                      alt=""
+                      loading="lazy"
+                    />
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Programmation Mobile</div>
+                        <h3 class="entry-title">Love City</h3>
+                        <div class="entry-links">
+                          <a
+                            href="assets/img/portfolio/portfolio-services-programmation-lovecity-1-0.webp"
+                            class="glightbox"
+                            data-gallery="portfolio-gallery-photography"
+                            data-glightbox="title: Love City; description: Un reseau social de rencontre."
+                          >
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html?id=project-4">
+                            <i class="bi bi-arrow-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-programmation"
+              >
+                <article class="portfolio-entry">
+                  <figure class="entry-image">
+                    <img
+                      src="assets/img/portfolio/portfolio-services-programmation-woo-1-0.webp"
+                      class="img-fluid"
+                      alt=""
+                      loading="lazy"
+                    />
+                    <div class="entry-overlay">
+                      <div class="overlay-content">
+                        <div class="entry-meta">Programmation Mobile</div>
+                        <h3 class="entry-title">WOO</h3>
+                        <div class="entry-links">
+                          <a
+                            href="assets/img/portfolio/portfolio-services-programmation-woo-1-0.webp"
+                            class="glightbox"
+                            data-gallery="portfolio-gallery-marketing"
+                            data-glightbox="title: WOO; description: Un reseau social pour les otaku et les amateurs de jeux video."
+                          >
+                            <i class="bi bi-arrows-angle-expand"></i>
+                          </a>
+                          <a href="portfolio-details.html?id=project-5">
+                            <i class="bi bi-arrow-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </article>
+              </div>
+              <!-- End Portfolio Item -->
+            </div>
+            <!-- End Portfolio Container -->
+          </div>
+        </div>
+      </section>
+      <!-- /Portfolio Section -->
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials section">
+        <!-- Section Title -->
+        <div class="container section-title">
+          <h2>Témoignages</h2>
+          <p>Découvrez ce que disent mes clients et collaborateurs</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row">
+            <div class="col-12">
+              <div
+                class="critic-reviews"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="critic-review">
+                      <div class="review-quote">"</div>
                       <div class="stars">
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
@@ -1079,42 +1395,22 @@
                         <i class="bi bi-star-fill"></i>
                       </div>
                       <p>
-                        Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Nulla quis lorem ut libero malesuada feugiat.
+                        « Travailler avec une personne aussi engagée et réactive
+                        a été un véritable atout pour notre marque. Grâce à son
+                        accompagnement digital et graphique, Wodossi a pu
+                        renforcer sa présence en ligne et affirmer son identité
+                        visuelle avec style et cohérence. »
                       </p>
-                      <div class="testimonial-profile">
-                        <img src="assets/img/person/person-f-1.webp" alt="Reviewer" class="img-fluid rounded-circle">
-                        <div>
-                          <h3>Jane Smith</h3>
-                          <h4>Book Enthusiast</h4>
+                      <div class="critic-info">
+                        <div class="critic-name">
+                          🧥 Wodossi – Marque de vêtements
                         </div>
                       </div>
                     </div>
-                  </div><!-- End testimonial item -->
-
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                      </div>
-                      <p>
-                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Cras ultricies ligula sed magna dictum porta. Vestibulum ante ipsum primis in faucibus orci luctus.
-                      </p>
-                      <div class="testimonial-profile">
-                        <img src="assets/img/person/person-m-2.webp" alt="Reviewer" class="img-fluid rounded-circle">
-                        <div>
-                          <h3>Michael Johnson</h3>
-                          <h4>Sci-Fi Blogger</h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- End testimonial item -->
-
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
+                  </div>
+                  <div class="col-md-4">
+                    <div class="critic-review">
+                      <div class="review-quote">"</div>
                       <div class="stars">
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
@@ -1123,20 +1419,23 @@
                         <i class="bi bi-star-half"></i>
                       </div>
                       <p>
-                        Quisque velit nisi, pretium ut lacinia in, elementum id enim. Cras ultricies ligula sed magna dictum porta. Donec sollicitudin molestie malesuada.
+                        « Chez Nextmux, l'innovation est au cœur de tout. Avoir
+                        collaboré avec un professionnel capable de comprendre
+                        nos besoins complexes, tout en livrant des solutions
+                        agiles et efficaces, a été un vrai levier de
+                        performance. Une expertise technique rare et une belle
+                        capacité d'adaptation. »
                       </p>
-                      <div class="testimonial-profile">
-                        <img src="assets/img/person/person-f-3.webp" alt="Reviewer" class="img-fluid rounded-circle">
-                        <div>
-                          <h3>Emily Davis</h3>
-                          <h4>Book Club President</h4>
+                      <div class="critic-info">
+                        <div class="critic-name">
+                          💻 Nextmux – Entreprise high-tech
                         </div>
                       </div>
                     </div>
-                  </div><!-- End testimonial item -->
-
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
+                  </div>
+                  <div class="col-md-4">
+                    <div class="critic-review">
+                      <div class="review-quote">"</div>
                       <div class="stars">
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
@@ -1145,262 +1444,484 @@
                         <i class="bi bi-star-fill"></i>
                       </div>
                       <p>
-                        Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur.
+                        « Nous avions besoin de supports clairs et percutants
+                        pour porter nos actions environnementales. Grâce à son
+                        accompagnement, nos messages sont aujourd'hui mieux
+                        compris et relayés, autant sur le web que dans nos
+                        campagnes de terrain. Un partenaire de confiance au
+                        service de la planète. »
                       </p>
-                      <div class="testimonial-profile">
-                        <img src="assets/img/person/person-m-4.webp" alt="Reviewer" class="img-fluid rounded-circle">
-                        <div>
-                          <h3>Robert Wilson</h3>
-                          <h4>Literary Reviewer</h4>
+                      <div class="critic-info">
+                        <div class="critic-name">
+                          🌱 JVE Bénin – ONG environnement
                         </div>
                       </div>
                     </div>
-                  </div><!-- End testimonial item -->
-
+                  </div>
                 </div>
-                <div class="swiper-pagination"></div>
+              </div>
+
+              <div class="testimonials-container">
+                <div
+                  class="swiper testimonials-slider init-swiper"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <script type="application/json" class="swiper-config">
+                    {
+                      "loop": true,
+                      "speed": 600,
+                      "autoplay": {
+                        "delay": 5000
+                      },
+                      "slidesPerView": 1,
+                      "spaceBetween": 30,
+                      "pagination": {
+                        "el": ".swiper-pagination",
+                        "type": "bullets",
+                        "clickable": true
+                      },
+                      "breakpoints": {
+                        "768": {
+                          "slidesPerView": 2
+                        },
+                        "992": {
+                          "slidesPerView": 3
+                        }
+                      }
+                    }
+                  </script>
+
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="testimonial-item">
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                          « Grâce à ses conseils et à son travail rigoureux,
+                          j'ai pu améliorer la visibilité de ma boutique tech.
+                          Aujourd'hui, mes produits sont mieux présentés, mes
+                          clients mieux informés, et mes ventes ont clairement
+                          progressé. »
+                        </p>
+                        <div class="testimonial-profile">
+                          <img
+                            src="assets/img/person/hylarion.webp"
+                            alt="Hylarion Tolli"
+                            class="img-fluid rounded-circle"
+                          />
+                          <div>
+                            <h3>Hylarion Tolli</h3>
+                            <h4>iTech Hylarion Center</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                      <div class="testimonial-item">
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                          « La mise en valeur de mon restaurant sur les réseaux
+                          sociaux et via des visuels professionnels a fait toute
+                          la différence. Je reçois régulièrement des compliments
+                          sur la présentation en ligne, et cela attire de
+                          nouveaux clients chaque semaine. »
+                        </p>
+                        <div class="testimonial-profile">
+                          <img
+                            src="assets/img/person/chikita.webp"
+                            alt="Maria-Rosa DeSouza"
+                            class="img-fluid rounded-circle"
+                          />
+                          <div>
+                            <h3>Maria-Rosa DeSouza</h3>
+                            <h4>NAT Grille & Coffee Burkina Faso</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                      <div class="testimonial-item">
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                        </div>
+                        <p>
+                          « J'ai trouvé chez lui un accompagnement complet :
+                          site web, visuels, conseils… tout y était. Cela m'a
+                          permis de moderniser la communication de mon magasin
+                          d'électroménager et de fidéliser ma clientèle. »
+                        </p>
+                        <div class="testimonial-profile">
+                          <img
+                            src="assets/img/person/habib.webp"
+                            alt="Moulero TOLLY"
+                            class="img-fluid rounded-circle"
+                          />
+                          <div>
+                            <h3>Moulero TOLLY</h3>
+                            <h4>La Maison du Froid</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                      <div class="testimonial-item">
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                          « Professionnel, rapide et toujours à l'écoute. Grâce
+                          à lui, mon entreprise "Les Bonnes Affaires" a
+                          aujourd'hui une image crédible et soignée, ce qui m'a
+                          permis d'élargir ma clientèle au-delà du
+                          bouche-à-oreille. »
+                        </p>
+                        <div class="testimonial-profile">
+                          <img
+                            src="assets/img/person/jordanio.webp"
+                            alt="Mr Jordiano"
+                            class="img-fluid rounded-circle"
+                          />
+                          <div>
+                            <h3>Mr Jordiano</h3>
+                            <h4>Les Bonnes Affaires</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End testimonial item -->
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 text-center" data-aos="fade-up">
+              <div class="overall-rating">
+                <div class="rating-number">4.8</div>
+                <div class="rating-stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <p>Basé sur 230+ avis</p>
+                <div class="rating-platforms">
+                  <span>Come UP</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+      <!-- /Testimonials Section -->
 
-        <div class="row">
-          <div class="col-12 text-center" data-aos="fade-up">
-            <div class="overall-rating">
-              <div class="rating-number">4.8</div>
-              <div class="rating-stars">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-half"></i>
+      <!-- Faq Section -->
+      <section id="faq" class="faq section">
+        <!-- Section Title -->
+        <div class="container section-title">
+          <h2>Questions Fréquentes</h2>
+          <p>Réponses aux questions les plus courantes</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+              <div class="faq-container">
+                <div class="faq-item faq-active">
+                  <h3>Comment puis-je commander vos services ?</h3>
+                  <div class="faq-content">
+                    <p>
+                      Vous pouvez me contacter directement via le formulaire de
+                      contact ou par email. Nous discuterons de vos besoins et
+                      je vous proposerai un devis personnalisé.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3>Quels sont vos délais de livraison ?</h3>
+                  <div class="faq-content">
+                    <p>
+                      Les délais varient selon la complexité du projet. En
+                      moyenne, un site web simple prend 2-3 semaines, tandis que
+                      des projets plus complexes peuvent nécessiter 1-2 mois.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3>
+                    Proposez-vous un service de maintenance après livraison ?
+                  </h3>
+                  <div class="faq-content">
+                    <p>
+                      Oui, je propose différents forfaits de maintenance
+                      incluant mises à jour, sauvegardes et support technique
+                      selon vos besoins.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3>Travaillez-vous avec des entreprises à l'étranger ?</h3>
+                  <div class="faq-content">
+                    <p>
+                      Absolument, je travaille avec des clients partout dans le
+                      monde. Les communications se font par visioconférence et
+                      outils collaboratifs en ligne.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3>Quelles méthodes de paiement acceptez-vous ?</h3>
+                  <div class="faq-content">
+                    <p>
+                      J'accepte les virements bancaires, les transferts mobiles
+                      et les paiements via plateformes sécurisées. Un acompte
+                      est généralement demandé pour commencer le projet.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3>Proposez-vous des formations pour gérer mon site ?</h3>
+                  <div class="faq-content">
+                    <p>
+                      Oui, je propose des sessions de formation pour vous
+                      autonomiser dans la gestion de votre site web ou de vos
+                      outils digitaux.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <!-- End Faq item-->
               </div>
-              <p>Based on 230+ reviews</p>
-              <div class="rating-platforms">
-                <span>Goodreads</span>
-                <span>Amazon</span>
-                <span>Barnes &amp; Noble</span>
+            </div>
+            <!-- End Faq Column-->
+          </div>
+        </div>
+      </section>
+      <!-- /Faq Section -->
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section light-background">
+        <!-- Section Title -->
+        <div class="container section-title">
+          <h2>Contact</h2>
+          <p>N'hésitez pas à me contacter pour discuter de votre projet</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row g-4 g-lg-5">
+            <div class="col-lg-5">
+              <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+                <h3>Coordonnées</h3>
+                <p>
+                  Je suis disponible pour répondre à vos questions et discuter
+                  de vos projets.
+                </p>
+
+                <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+                  <div class="icon-box">
+                    <i class="bi bi-geo-alt"></i>
+                  </div>
+                  <div class="content">
+                    <h4>Adresse</h4>
+                    <p>Zogbohouè</p>
+                    <p>Cotonou, Bénin</p>
+                  </div>
+                </div>
+
+                <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+                  <div class="icon-box">
+                    <i class="bi bi-telephone"></i>
+                  </div>
+                  <div class="content">
+                    <h4>Téléphone</h4>
+                    <p>+229 01 96 95 50 63</p>
+                    <p>+229 01 94 08 86 51</p>
+                  </div>
+                </div>
+
+                <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+                  <div class="icon-box">
+                    <i class="bi bi-envelope"></i>
+                  </div>
+                  <div class="content">
+                    <h4>Email</h4>
+                    <p>osvaldadoko36@gmail.com</p>
+                    <p>aogroupe36@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+                <h3>Me Contacter</h3>
+                <p>
+                  Remplissez le formulaire ci-dessous et je vous répondrai dans
+                  les plus brefs délais.
+                </p>
+
+                <form
+                  action="forms/contact.php"
+                  method="post"
+                  class="php-email-form"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <div class="row gy-4">
+                    <div class="col-md-6">
+                      <input
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        placeholder="Votre Nom"
+                        required=""
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <input
+                        type="email"
+                        class="form-control"
+                        name="email"
+                        placeholder="Votre Email"
+                        required=""
+                      />
+                    </div>
+
+                    <div class="col-12">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="subject"
+                        placeholder="Sujet"
+                        required=""
+                      />
+                    </div>
+
+                    <div class="col-12">
+                      <textarea
+                        class="form-control"
+                        name="message"
+                        rows="6"
+                        placeholder="Message"
+                        required=""
+                      ></textarea>
+                    </div>
+
+                    <div class="col-12 text-center">
+                      <div class="loading">Chargement</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">
+                        Votre message a été envoyé. Merci !
+                      </div>
+
+                      <button type="submit" class="btn">
+                        Envoyer le message
+                      </button>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section><!-- /Testimonials Section -->
+      </section>
+      <!-- /Contact Section -->
+    </main>
 
-    <!-- Faq Section -->
-    <section id="faq" class="faq section">
-
-      <!-- Section Title -->
-      <div class="container section-title">
-        <h2>Frequently Asked Questions</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
+    <footer id="footer" class="footer dark-background">
       <div class="container">
-
-        <div class="row justify-content-center">
-
-          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="faq-container">
-
-              <div class="faq-item faq-active">
-                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
-                <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Feugiat scelerisque varius morbi enim nunc faucibus?</h3>
-                <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
-                <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
-                <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor?</h3>
-                <div class="faq-content">
-                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3>
-                <div class="faq-content">
-                  <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-            </div>
-
-          </div><!-- End Faq Column-->
-
+        <div class="copyright text-center">
+          <p>
+            © <span>Copyright</span>
+            <strong class="px-1 sitename">Style</strong>
+            <span>All Rights Reserved</span>
+          </p>
         </div>
-
-      </div>
-
-    </section><!-- /Faq Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row g-4 g-lg-5">
-          <div class="col-lg-5">
-            <div class="info-box" data-aos="fade-up" data-aos-delay="200">
-              <h3>Contact Info</h3>
-              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
-
-              <div class="info-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon-box">
-                  <i class="bi bi-geo-alt"></i>
-                </div>
-                <div class="content">
-                  <h4>Our Location</h4>
-                  <p>A108 Adam Street</p>
-                  <p>New York, NY 535022</p>
-                </div>
-              </div>
-
-              <div class="info-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon-box">
-                  <i class="bi bi-telephone"></i>
-                </div>
-                <div class="content">
-                  <h4>Phone Number</h4>
-                  <p>+1 5589 55488 55</p>
-                  <p>+1 6678 254445 41</p>
-                </div>
-              </div>
-
-              <div class="info-item" data-aos="fade-up" data-aos-delay="500">
-                <div class="icon-box">
-                  <i class="bi bi-envelope"></i>
-                </div>
-                <div class="content">
-                  <h4>Email Address</h4>
-                  <p>info@example.com</p>
-                  <p>contact@example.com</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-7">
-            <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
-              <h3>Get In Touch</h3>
-              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
-
-              <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-                <div class="row gy-4">
-
-                  <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                  </div>
-
-                  <div class="col-md-6 ">
-                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                  </div>
-
-                  <div class="col-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                  </div>
-
-                  <div class="col-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                  </div>
-
-                  <div class="col-12 text-center">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                    <button type="submit" class="btn">Send Message</button>
-                  </div>
-
-                </div>
-              </form>
-
-            </div>
-          </div>
-
+        <div class="social-links d-flex justify-content-center">
+          <a href="https://www.facebook.com/algor.adoko.3"><i class="bi bi-facebook"></i></a>
+        <a href="https://wa.me/22996955063" target="_blank"><i class="bi bi-whatsapp"></i></a>
+          <a href="https://www.linkedin.com/in/osvald-adoko-7a3ab3235"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/Osvald367" target="_blank">
+              <i class="bi bi-github"></i>
+            </a>
         </div>
-
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by Osvald ADOKO</a>
+        </div>
       </div>
+    </footer>
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-    </section><!-- /Contact Section -->
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  </main>
-
-  <footer id="footer" class="footer dark-background">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Style</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

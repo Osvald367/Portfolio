@@ -18,9 +18,11 @@ const portfolioProjects = [
       "Interface responsive"
     ],
     images: [
-      "assets/img/services/services-ui-ux-2.webp",
       "assets/img/portfolio/portfolio-services-ui-ux-2-1.webp",
-      "assets/img/portfolio/portfolio-services-ui-ux-2-2.webp"
+      "assets/img/portfolio/portfolio-services-ui-ux-2-2.webp",
+      "assets/img/portfolio/portfolio-services-ui-ux-2-3.webp",
+      "assets/img/portfolio/portfolio-services-ui-ux-2-4.webp",
+      "assets/img/portfolio/portfolio-services-ui-ux-2-5.webp"
     ],
     thumbnails: [
       "assets/img/portfolio/portfolio-services-ui-ux-2-3.webp",
@@ -47,9 +49,10 @@ const portfolioProjects = [
       "Gestion de paiement"
     ],
     images: [
-      "assets/img/services/services-developpement-web-2.webp",
       "assets/img/portfolio/portfolio-services-developpement-wodossi-2-1.webp",
-      "assets/img/portfolio/portfolio-services-developpement-wodossi-2-2.webp"
+      "assets/img/portfolio/portfolio-services-developpement-wodossi-2-2.webp",
+      "assets/img/portfolio/portfolio-services-developpement-wodossi-2-3.webp",
+      "assets/img/portfolio/portfolio-services-developpement-wodossi-2-4.webp"
     ],
     thumbnails: [
       "assets/img/portfolio/portfolio-services-developpement-wodossi-2-3.webp",
@@ -63,8 +66,8 @@ const portfolioProjects = [
     title: "Appareil Pro",
     client: "Mr Bochaël",
     date: "Juillet 2025",
-    // website: "A venir",
-    // techStack: ["WordPress"],
+    website: "Locale",
+    techStack: ["Photoshop", "Illustrator"],
     overview: "Boutique de vente de produits élèctromenagers en ligne.",
     challenge: "Agencement du logo pour les visuels a venir.",
     solution: "ff",
@@ -73,13 +76,82 @@ const portfolioProjects = [
       "Colorie vive et moderne",
     ],
     images: [
-      "assets/img/services/portfolio-services-graphisme-Ap-1-1.webp",
-      "assets/img/portfolio/portfolio-services-developpement-wodossi-2-1.webp",
-      "assets/img/portfolio/portfolio-services-developpement-wodossi-2-2.webp"
+      "assets/img/portfolio/portfolio-services-graphisme-Ap-1-1.webp",
+      "assets/img/portfolio/portfolio-services-graphisme-Ap-1-2.webp",
+      "assets/img/portfolio/portfolio-services-graphisme-Ap-1-3.webp",
+      "assets/img/portfolio/portfolio-services-graphisme-Ap-1-4.webp",
+      "assets/img/portfolio/portfolio-services-graphisme-Ap-1-5.webp",
+      "assets/img/portfolio/portfolio-services-graphisme-Ap-1-6.webp",
     ],
     thumbnails: [
-      "assets/img/portfolio/portfolio-services-developpement-wodossi-2-3.webp",
-      "assets/img/portfolio/portfolio-services-developpement-wodossi-2-4.webp"
+      "assets/img/portfolio/portfolio-services-graphisme-Ap-1-3.webp",
+      "assets/img/portfolio/portfolio-services-graphisme-Ap-1-4.webp",
+      "assets/img/portfolio/portfolio-services-graphisme-Ap-1-5.webp",
+    ]
+  },
+  {
+    id: "project-4",
+    badge: "Programmation Mobile",
+    category: "programmation",
+    title: "Love City",
+    client: "Nextmux.Sarl",
+    date: "En Attente",
+    website: "Locale",
+    techStack: ["Flutter"],
+    overview: "Reseau social de rencontre d'amoureux en ligne.",
+    challenge: "Confidentiel",
+    solution: "...",
+    features: [
+      "Gestion des utilisateurs",
+      "Gestion des messages",
+      "Gestion des notifications",
+      "Offre de cadeaux",
+      "Offre de services"
+    ],
+    images: [
+      "assets/img/portfolio/portfolio-services-programmation-lovecity-1-0.webp",
+      "assets/img/portfolio/portfolio-services-programmation-lovecity-1-1.webp",
+      "assets/img/portfolio/portfolio-services-programmation-lovecity-1-2.webp",
+      "assets/img/portfolio/portfolio-services-programmation-lovecity-1-3.webp",
+
+    ],
+    thumbnails: [
+      "assets/img/portfolio/portfolio-services-programmation-lovecity-1-1.webp",
+      "assets/img/portfolio/portfolio-services-programmation-lovecity-1-2.webp",
+      "assets/img/portfolio/portfolio-services-programmation-lovecity-1-3.webp",
+    ]
+  },
+  {
+    id: "project-5",
+    badge: "Programmation Mobile",
+    category: "programmation",
+    title: "WOO",
+    client: "Nextmux.Sarl",
+    date: "En Attente",
+    website: "Locale",
+    techStack: ["Flutter"],
+    overview: "Reseau social pour les otaku et les amateurs de jeux video.",
+    challenge: "Confidentiel",
+    solution: "...",
+    features: [
+      "Gestion des utilisateurs",
+      "Gestion des messages",
+      "Gestion des notifications",
+      "Transfers de jeux video",
+      "Transfers de video",
+
+    ],
+    images: [
+      "assets/img/portfolio/portfolio-services-programmation-woo-1-0.webp",
+      "assets/img/portfolio/portfolio-services-programmation-woo-1-1.webp",
+      "assets/img/portfolio/portfolio-services-programmation-woo-1-2.webp",
+      "assets/img/portfolio/portfolio-services-programmation-woo-1-3.webp",
+
+    ],
+    thumbnails: [
+      "assets/img/portfolio/portfolio-services-programmation-woo-1-1.webp",
+      "assets/img/portfolio/portfolio-services-programmation-woo-1-2.webp",
+      "assets/img/portfolio/portfolio-services-programmation-woo-1-3.webp",
     ]
   }
 ];

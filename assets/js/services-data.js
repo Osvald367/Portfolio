@@ -39,9 +39,8 @@ const services = [
     { step: "04", title: "Tests & Mise en ligne", text: "Vérification, débogage, déploiement sécurisé." }
   ],
   gallery: [
-    "assets/img/services/services-developpement-web-1.webp",
-    "assets/img/services/services-developpement-web-2.webp",
-    "assets/img/services/services-developpement-web-3.webp",
+    "assets/img/services/services-developpement-web.webp",
+    "assets/img/portfolio/portfolio-services-developpement-wodossi-2-1.webp",
   ],
   info: {
     duration: "1-3 mois",
@@ -57,7 +56,7 @@ const services = [
   title: "Développement Mobile",
   icon: "bi-phone",
   description: "Applications mobiles performantes et intuitives pour Android et iOS, en natif ou avec des technologies hybrides.",
-  image: "assets/img/services/services-developpement-mobile.webp",
+  image: "assets/img/services/services-programmation-mobile.webp",
   badge: "Service Premium",
   intro: "Nous créons des applications mobiles rapides, ergonomiques et orientées utilisateur pour répondre à vos besoins métiers.",
   features: [
@@ -89,9 +88,9 @@ const services = [
     { step: "04", title: "Tests et déploiement", text: "Vérifications fonctionnelles et publication." }
   ],
   gallery: [
-    "assets/img/services/services-developpement-mobile-1.webp",
-    "assets/img/services/services-developpement-mobile-2.webp",
-    "assets/img/services/services-developpement-mobile-3.webp"
+    "assets/img/services/services-programmation-mobile.webp",
+    "assets/img/portfolio/portfolio-services-programmation-lovecity-1-1.webp",
+    "assets/img/portfolio/portfolio-services-programmation-woo-1-1.webp",
   ],
   info: {
     duration: "4-6 mois",
@@ -139,9 +138,8 @@ const services = [
     { step: "04", title: "Prototype", text: "Navigation simulée et présentation client." }
   ],
   gallery: [
-    "assets/img/services/services-ui-ux-1.webp",
-    "assets/img/services/services-ui-ux-2.webp",
-    "assets/img/services/services-ui-ux-3.webp"
+    "assets/img/services/services-ui-ux.webp",
+    "assets/img/portfolio/portfolio-services-ui-ux-2-1.webp",
   ],
   info: {
     duration: "2-6 semaines",
@@ -157,7 +155,7 @@ const services = [
   title: "Identité Visuelle",
   icon: "bi-brush",
   description: "Création de l’univers graphique de votre marque : logo, charte graphique, typographies, couleurs et déclinaisons.",
-  image: "assets/img/services/services-identié-visuelle.webp",
+  image: "assets/img/services/services-identite-visuels.webp",
   badge: "Impact Visuel",
   intro: "Une image forte et cohérente est la première étape pour vous faire remarquer et mémoriser.",
   features: [
@@ -189,9 +187,8 @@ const services = [
     { step: "04", title: "Livraison", text: "Pack complet de fichiers pour web & print." }
   ],
   gallery: [
-    "assets/img/services/services-identite-visuelle-1.webp",
-    "assets/img/services/services-identite-visuelle-2.webp",
-    "assets/img/services/services-identite-visuelle-3.webp"
+    "assets/img/services/services-identite-visuels.webp",
+    "assets/img/portfolio/portfolio-services-graphisme-Ap-1-3.webp",
   ],
   info: {
     duration: "1-3 semaines",
@@ -207,7 +204,7 @@ const services = [
   title: "Supports Visuels",
   icon: "bi-file-earmark-richtext",
   description: "Création de visuels print et digitaux adaptés à vos besoins : flyers, affiches, bannières, présentations, packaging...",
-  image: "assets/img/services/services-support-visuelle.webp",
+  image: "assets/img/services/services-support-visuels.webp",
   badge: "Communication Visuelle",
   intro: "Faites passer vos messages efficacement grâce à des supports graphiques percutants et professionnels.",
   features: [
@@ -239,18 +236,7 @@ const services = [
     { step: "04", title: "Export", text: "Fichiers optimisés pour impression ou publication." }
   ],
   gallery: [
-    "assets/img/services/services-supports-visuels-1.webp",
-    "assets/img/services/services-supports-visuels-2.webp",
-    "assets/img/services/services-supports-visuels-3.webp",
-    "assets/img/services/services-supports-visuels-4.webp",
-    "assets/img/services/services-supports-visuels-5.webp",
-    "assets/img/services/services-supports-visuels-6.webp",
-    "assets/img/services/services-supports-visuels-7.webp",
-    "assets/img/services/services-supports-visuels-8.webp",
-    "assets/img/services/services-supports-visuels-9.webp",
-    "assets/img/services/services-supports-visuels-10.webp",
-    "assets/img/services/services-supports-visuels-11.webp",
-    "assets/img/services/services-supports-visuels-12.webp"
+    "assets/img/services/services-support-visuels.webp",
 
   ],
   info: {
@@ -299,9 +285,7 @@ const services = [
     { step: "04", title: "Support technique", text: "Canal dédié pour vos demandes." }
   ],
   gallery: [
-    "assets/img/services/services-maintenance-1.webp",
-    "assets/img/services/services-maintenance-2.webp",
-    "assets/img/services/services-maintenance-3.webp",
+    "assets/img/services/services-maintenance.webp",
   ],
   info: {
     duration: "Abonnement mensuel",
