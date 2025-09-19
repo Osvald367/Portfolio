@@ -1,42 +1,34 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
+require '../vendor/autoload.php'; // adapte le chemin si nécessaire
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+$mail = new PHPMailer(true);
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+try {
+    // ⚙️ Config SMTP
+    $mail->isSMTP();
+    $mail->Host       = 'smtp.gmail.com';
+    $mail->SMTPAuth   = true;
+    $mail->Username   = 'osvaldadoko36@gmail.com'; // ton Gmail
+    $mail->Password   = 'oibg wnrg thnl huae';     // ton mot de passe d’application
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Port       = 587;
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
+    // 📧 Expéditeur et destinataire
+    $mail->setFrom('osvaldadoko36@gmail.com', 'Formulaire Portfolio');
+    $mail->addAddress('osvaldadoko36@gmail.com'); // tu reçois les messages ici
+    $mail->addReplyTo($_POST['email'], $_POST['name']); // pour pouvoir répondre au client
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  isset($_POST['phone']) && $contact->add_message($_POST['phone'], 'Phone');
-  $contact->add_message( $_POST['message'], 'Message', 10);
+    // 📝 Contenu du mail
+    $mail->isHTML(true);
+    $mail->Subject = htmlspecialchars($_POST['subject']);
+    $mail->Body    = nl2br(htmlspecialchars($_POST['message']));
+    $mail->AltBody = htmlspecialchars($_POST['message']);
 
-  echo $contact->send();
-?>
+    $mail->send();
+    echo 'OK'; // important : BootstrapMade attend "OK"
+} catch (Exception $e) {
+    echo "Erreur : {$mail->ErrorInfo}";
+}
